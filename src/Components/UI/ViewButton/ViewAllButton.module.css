@@ -1,0 +1,13 @@
+.button{
+    font-size: 1vw;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.button:hover{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    outline: none;
+}

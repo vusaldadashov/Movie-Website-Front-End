@@ -1,0 +1,64 @@
+.container {
+    width: 70%;
+    margin-left: 5%;
+}
+
+.title {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+.title p{
+    font-size: 1.5vw;
+}
+
+.movies {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-bottom: 0.8px solid rgb(54, 54, 54);
+}
+
+.card {
+    width: calc(92.5%/6);
+    height: fit-content;
+    margin-top: 2vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vw;
+    align-items: center;
+}
+.footer_buttons {
+    display: flex;
+    gap: 1vw;
+}
+.footer_buttons button {
+    border: none;
+    border-radius: 2px;
+    background-color: #262e46 ;
+    color: white;
+    padding: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #1d4bd5 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .card {
+        width: 80%;
+    }
+    .container{
+        width: 100%;
+    }
+}

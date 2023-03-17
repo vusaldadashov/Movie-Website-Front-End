@@ -1,0 +1,23 @@
+.backward {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 11;
+}
+.sign {
+    width: fit-content;
+    height: fit-content;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: white;
+    position: fixed;
+    z-index: 22;
+    left: 0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20%;
+}

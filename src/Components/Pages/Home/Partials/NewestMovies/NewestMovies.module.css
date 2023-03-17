@@ -1,0 +1,255 @@
+.main_container {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.special_shows {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    height: 200px;
+}
+
+.card {
+    width: calc(92%/(5.5));
+    height: 10vw;
+}
+
+.control {
+    width: calc(92%/5.5 * 1.5);
+}
+.control h2 {
+    width: 80%;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.top9_movies {
+    width: 30%;
+}
+.movies_title {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+.movies_title h2 {
+    width: 50%;
+    margin-right: auto;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.movies_buttons{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+.movies_buttons a{
+    width: fit-content;
+    text-decoration: none;
+    color: gray;
+    font-size: 1vw;
+}
+.second_container {
+    padding-top: 5%;
+    display: flex;
+    gap: 5%;
+}
+.newest_movies {
+    width: 60%;
+    padding-top: 1%;
+}
+.newest_movie{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    margin-top: 2%;
+}
+.newest_movie_image {
+    width: 20%;
+    height: 18vw;
+}
+.newest_movie_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.newest_movie_details {
+    width: 70%;
+    padding-top: 2%;
+}
+.newest_movie_details p {
+    color: white;
+    margin: 0;
+    margin-bottom: 1vw;
+}
+.newest_movie_details p:nth-child(1){
+    font-size: 1vw;
+}
+.newest_movie_details p:nth-child(2){
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.newest_movie_details p:nth-child(3){
+    font-size: 1vw;
+}
+.newest_movie_buttons a{
+    font-size: 1vw;
+    color: white !important;
+}
+.newest_movie_buttons {
+    display: flex;
+    gap: 5%;
+}
+
+
+.small_cards {
+    width: 50%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.small_cards:first-child{
+    padding-right: 2%;
+}
+.small_cards:last-child {
+    padding-left: 2%;
+}
+.small_card {
+    width: 90%;
+    display: flex;
+    gap: 5%;
+    background-color: #10121b;
+    margin-top: 1%;
+}
+.small_card_image {
+    width: 16%;
+    height: fit-content;
+    background-color: gray;
+}
+.small_card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.small_card_details{
+    padding-top: 3%;
+}
+.small_card_details p{
+    color: white;
+    font-size: 0.8vw;
+    margin: 0;
+}
+.small_card_details p:nth-child(2){
+    font-size: 1vw;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.carousel {
+    display: none;
+}
+.slider_container {
+    display: none;
+}
+
+.buttons button {
+    border: none;
+    background: none;
+    font-size: 2vw;
+    color: gray;
+    outline: none;
+    transition: all 1s;
+}
+.buttons button:hover{
+    cursor: pointer;
+    color: rgb(213, 213, 213);
+}
+@media only screen and (max-width: 800px) {
+    .card {
+        display: none;
+    }
+    .control {
+        width: 100%;
+    }
+    .control h2 {
+        font-size: 5vw;
+    }
+    .buttons {
+        display: none;
+    }
+    .special_shows {
+        height: 100%;
+    }
+    .slider_container {
+        display: block;
+    }
+    .second_container {
+        flex-direction: column;
+    }
+    .top9_movies{
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .movies_title {
+        flex-direction: column;
+    }
+    .movies_title h2 {
+        font-size: 8vw;
+        margin-right: 0;
+        width: 100%;
+    }
+    .movies_buttons {
+        justify-content:flex-start;
+        width: 100%;
+    }
+    .movies_buttons a{
+        font-size: 4vw;
+    }
+    .newest_movies{
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .newest_movie {
+        margin-bottom: 5vw;
+    }
+    .newest_movie_image{
+        width: 60%;
+        height: 80vw;
+    }
+    .newest_movie_details{
+        width: 40%;
+    }
+    .newest_movie_details p{
+        font-size: 4vw !important;
+    }
+    .newest_movie_details p:nth-child(2){
+        font-size: 6vw;
+    }
+    .newest_movie_buttons{
+        flex-direction: column;
+    }
+    .newest_movie_buttons a{
+        font-size: 3.5vw;
+    }
+    .small_card {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
+    .small_card_image{
+        width: 100%;
+        height: fit-content;
+    }
+    .small_card_details p{
+        font-size: 4vw;
+        margin: 0;
+    }
+    .small_card_details p:nth-child(2){
+        font-size: 5vw;
+    }
+}

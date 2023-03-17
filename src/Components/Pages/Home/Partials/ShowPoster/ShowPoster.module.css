@@ -1,0 +1,79 @@
+.poster{
+    padding-top: 7%;
+    padding-bottom: 4%;
+}
+.poster h1 {
+    color: white;
+    margin-bottom: 3%;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+}
+.seasons {
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+.seasons a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: bold;
+}
+.episodes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: calc(10%/4);
+}
+
+.episode{
+    width: calc(90%/5);
+    height: 10vw;
+}
+.show_details {
+    font-size: 1.5vw;
+    margin-bottom: 4%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+    .poster {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .poster h1 {
+        font-size: 8vw;
+    }
+    .show_details {
+        font-size: 6vw;
+    }
+    .seasons {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100% !important;
+        gap: 5%;
+        justify-content: center;
+    }
+    .seasons a{
+        width: 30%;
+        font-size: 5vw;
+        margin-top: 2%;
+    }
+    .episodes {
+        flex-wrap: wrap ;
+        gap: 6% !important;
+    }
+    .episode {
+        width: 47% !important;
+        height: 25vw;
+        margin-top: 10vw;
+    }
+}

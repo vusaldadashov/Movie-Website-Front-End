@@ -1,0 +1,32 @@
+.lists_container {
+    width: 40%;
+}
+.title {
+    color: white;
+}
+.container {
+    display: flex;
+    gap: 30%;
+}
+.lists {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.lists li {
+    width: 100%;
+    list-style-type: none;
+    margin-top: 1vw;
+}
+.lists li a {
+    width: 100%;
+    color: rgb(215, 215, 215);
+}
+
+
+@media only screen and (max-width: 760px) {
+    .lists_container {
+        width: 100% !important;
+        margin-top: 5%;
+    }
+}
