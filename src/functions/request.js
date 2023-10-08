@@ -1,4 +1,4 @@
-var server_url = "http://localhost:8080"
+var server_url = "https://movie-website-api-jf1v.onrender.com"
 export async function postRequest (url,body) {
     return fetch(server_url + url, {
             method: 'POST',
