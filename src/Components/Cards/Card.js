@@ -4,7 +4,7 @@ import classes from './Card.module.css'
 function Card(params) {
     const details = params.episode === undefined ? params.type.toString(' '): params.episode;
     return (
-            <NavLink className={classes.link} to={`movie/${params.id}`}>
+            <NavLink className={classes.link} to={`${params.link_to}${params.id}`}>
             <div className={classes.image}>
                 <img src={params.imageUrl} alt="alt" />
             </div>

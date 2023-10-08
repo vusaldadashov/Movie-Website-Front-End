@@ -11,6 +11,9 @@
     background-color: gray;
 }
 
+.movie_video iframe{
+    border: 0;
+}
 .movie_details{
     width: 30%;
     padding-left: 3%;

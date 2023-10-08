@@ -12,21 +12,25 @@ function PopularMovies(params) {
                     <p>Most watched movies by days</p>
                     <ViewAllButton to={'movies'} >{'VIEW ALL >'}</ViewAllButton>
                 </div>
-                    {params.movies.map((movie, index) => index < 5 && <div className={classes.card} key={movie.id}>
-                        <Card {...movie} titleColor="white" />
-                    </div>)} 
+                {params.movies.map((movie, index) => index < 5 && <div className={classes.card} key={movie.id}>
+                    <Card {...movie}
+                        link_to='/movies/movie/'
+                        titleColor="white"
+                    />
+                </div>)}
             </div>
             <div className={classes.movies}>
-                {params.movies.map((movie, index) => (index > 4 && index < 12) &&  <div className={classes.card} key={movie.id}>
-                    <Card {...movie} titleColor="white" />
+                {params.movies.map((movie, index) => (index > 4 && index < 12) && <div className={classes.card} key={movie.id}>
+                    <Card {...movie}
+                        link_to='/movies/movie/'
+                        titleColor="white"
+                    />
                 </div>)}
             </div>
             <div className={classes.button}>
-            <div className={classes.line}></div>
-            <NavLink className={`btn btn-outline-light btn-lg text-white ${classes.special_button}`}>+View more</NavLink>
+                <div className={classes.line}></div>
+                <NavLink to={'movies'} className={`btn btn-outline-light btn-lg text-white ${classes.special_button}`}>+View more</NavLink>
             </div>
-           
-            
         </div>
     )
 }

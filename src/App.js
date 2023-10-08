@@ -17,10 +17,10 @@ function App() {
       <Menu />
       <Routes>
         <Route index path='/' element={<Home />}/>
-        <Route  path='/movies' element={<Movies />}/>
-        <Route  path='/shows' element={<Shows />}/>
+        <Route path='/movies' element={<Movies />}/>
+        <Route path='/shows' element={<Shows />}/>
         <Route path='/contact' element={<Contact />} />
-        <Route path='/movie/:id' element={<Movie />} />
+        <Route path='/movies/movie/:id' element={<Movie />} />
         <Route path='/tvshow/:id' element={<TvShow />} />
       </Routes>
       <Footer />

@@ -21,3 +21,24 @@
     margin-right: auto;
     top: 20%;
 }
+.form {
+    position: relative;
+}
+.searchs {
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    padding: 1vw;
+}
+.image {
+    width: 50px;
+    height: 75px;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}

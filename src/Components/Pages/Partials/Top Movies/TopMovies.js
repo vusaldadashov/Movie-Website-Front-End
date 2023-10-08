@@ -6,10 +6,10 @@ function TopMovies(params) {
         <div className={classes.top_movies}>
                         <div className={classes.movies_title}>
                             <h2>{params.title}</h2>
-                            <div className={classes.movies_buttons}>
+                            {params.movies.length > 5 && <div className={classes.movies_buttons}>
                                 <Link>Movies</Link>
                                 <Link>Tv Series</Link>
-                            </div>
+                            </div>}
                         </div>
                         {params.movies.map(movie => <div className={classes.top_movie} key={movie.id}>
                             <div className={classes.top_movie_id}><h2>{movie.id}</h2></div>

@@ -16,10 +16,10 @@
 .title {
     width: 100%;
     border-bottom: 1px solid gray;
-    padding-bottom: 1vw;
+    padding-bottom: 0.7vw;
 }
 .title p{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 .categories {
     width: 100%;
@@ -75,11 +75,11 @@
     font-size: 1vw;
     color: rgb(186, 186, 186);
 }
-.years {
+.letters {
     width: 100%;
 }
 
-.years ul {
+.letters ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -88,7 +88,7 @@
     padding-top: 2vw;
     padding-bottom: 2vw;
 }
-.years li{
+.letters li{
     width: calc(96%/5);
     height: 3vw;
     color: white;
@@ -124,7 +124,7 @@
     cursor: pointer;
 }
 
-.top5_movies {
+.top5_shows{
     width: 100%;
 }
 
@@ -133,7 +133,7 @@
         position: absolute;
         left: -50%;
     }
-    .top5_movies {
+    .top5_shows {
         display: none;
     }
 }
