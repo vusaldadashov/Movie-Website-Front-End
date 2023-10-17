@@ -1,4 +1,4 @@
-var server_url = "specialmovieapi.azurewebsites.net"
+var server_url = "https://specialmovieapi.azurewebsites.net"
 export async function postRequest (url,body) {
     return fetch(server_url + url, {
             method: 'POST',
